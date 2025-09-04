@@ -11,12 +11,27 @@ A Solidity compiler with support for:
 Command-Line Interface
 ----------------------
 
-Each contract will be placed in a separate file named based on its contract
-name.
+Compiles the Solidity `FILENAME`, writing a JSON with `{ abi, bytecode }`
+for each `CONTRACT` name provided to `CONTRACT.json`. The output is written to
+`FOLDER` (by default `./build`).
+
+Currently all builds are optimized.
+
+A `verify-contract.json` is also exported, which is a complete and
+reproducable input to the Solidity compiler that can be used to verify
+a contract on Etherscan or similar block explorers.
 
 ```
-/home/ricmoo/my_project> soler [ --output FOLDER ] CONTRACT [ ...CONTRACT ]
+/home/ricmoo/my_project> soler [ --output FOLDER ] FILENAME CONTRACT [ ...CONTRACT ]
 ```
+
+
+To Do
+-----
+
+- Add --no-optimize flag
+- Add --library support (easy; if you need this feature let me know)
+- Add `.d.ts` output
 
 
 License
