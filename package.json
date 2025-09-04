@@ -4,11 +4,11 @@
     "soler": "./lib.esm/soler.js"
   },
   "bugs": {
-    "url": "https://github.com/ricmoo/npm-utils/issues"
+    "url": "https://github.com/ethers-io/soler/issues"
   },
   "dependencies": {
-    "@ricmoo/cli": "^0.0.2",
-    "@ricmoo/solidity": "^0.0.1"
+    "@ricmoo/cli": "0.0.2",
+    "@ricmoo/solidity": "0.0.1"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
@@ -21,7 +21,7 @@
       "default": "./lib.commonjs/index.js"
     }
   },
-  "homepage": "https://github.com/ricmoo/npm-utils#readme",
+  "homepage": "https://github.com/ethers-io/soler#readme",
   "keywords": [
     "solidity",
     "compiler"
@@ -35,9 +35,8 @@
     "tag": "latest"
   },
   "repository": {
-    "directory": "soler",
     "type": "git",
-    "url": "git+ssh://git@github.com/ricmoo/npm-utils.git"
+    "url": "git+ssh://git@github.com/ethers-io/soler.git"
   },
   "scripts": {
     "auto-build": "npm run build -- -w",
@@ -49,5 +48,5 @@
   },
   "sideEffects": false,
   "type": "module",
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
