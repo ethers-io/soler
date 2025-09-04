@@ -1,11 +1,26 @@
-Soler - Solidity CLI Compiler
-=============================
+Soler - Solidity CLI
+====================
 
-A Solidity compiler with support for:
+A Solidity Compiler CLI that:
 
-- detect and use Solidity libraries installed in `node_modules/`
+- detects and use Solidity libraries installed in `node_modules/`
 - generates a single verify-contract.json for verifying on block explorers
 - outputs a single files including the ABI and byte code.
+
+For a more programmatic API, use the
+[@ricmoo/solidity](https://www.npmjs.com/package/@ricmoo/solidity)
+library directly.
+
+
+Installing
+----------
+
+Generally this is only needed as a `devDependency`, to compile contracts
+once and use the generated JSON directly.
+
+```
+/home/ricmoo/my_project> npm install --save-dev soler
+```
 
 
 Command-Line Interface
@@ -29,8 +44,8 @@ a contract on Etherscan or similar block explorers.
 To Do
 -----
 
-- Add --no-optimize flag
-- Add --library support (easy; if you need this feature let me know)
+- Add `--no-optimize` flag
+- Add `--library` support (easy; if you need this feature let me know)
 - Add `.d.ts` output
 
 
